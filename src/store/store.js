@@ -10,7 +10,7 @@ const middleWares = [process.env.NODE_ENV === 'development' && logger].filter(
 );
 
 const composeEnhancer =
-  (process.env.NODE_ENV !== 'production' &&
+  (process.env.NODE_ENV !== "production" &&
     window &&
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
