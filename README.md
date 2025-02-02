@@ -1,39 +1,78 @@
-# How to fork and clone
+# CRWN Clothing V2 - Redux Toolkit
 
-One quick note about cloning this project. If you wish to make commits and push your own code, you'll need to fork the project first. Forking allows you to have your own copy of this repository by adding a duplicate version in your own profile!
+## Overview
 
-You can see the fork button in the top right corner of every GitHub project; click it and a copy of the project will be added to your GitHub profile under the same name as the original project.
+This project is a modern **e-commerce website** built with **React**, using **Redux Toolkit** for state management and **Stripe** for payment processing. It is a fork of [ZhangMYihua's repository](https://github.com/ZhangMYihua/crwn-clothing-v2-redux-toolkit), which I am following as part of a course to deepen my knowledge of React and best development practices.
 
-<img width="612" alt="github fork" src="https://user-images.githubusercontent.com/10578605/157998981-4bfd1f83-825c-4664-b22d-b2c7d471dc70.png">
+My branch for this project is **my-main**.
 
-After forking the project, simply clone it the way you would from the new forked project in your own GitHub repository and you can commit and push to it freely!
+## Features
 
-# After you fork and clone:
+- **React & Redux Toolkit** for state management.
+- **Firebase Authentication** for user login/signup.
+- **Stripe API** integration for secure payments.
+- **Styled Components** for modern styling.
+- **Redux Persist** for storing cart items in local storage.
+- **Asynchronous Thunks** for API calls and Firebase interactions.
+- **Reusability & Performance Optimization** using best practices.
 
-## Install dependencies
+## Getting Started
 
-In your terminal after you clone your project down, remember to run either `yarn` or `npm install` to build all the dependencies in the project.
+### Prerequisites
+- Node.js (>= 14.x)
+- npm or yarn
 
-## Set your firebase config
+### Installation
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/thaisc98/crwn-clothing-v2-redux-toolkit.git
+   cd crwn-clothing-v2-redux-toolkit
+   ```
+2. **Switch to my-main branch:**
+   ```sh
+   git checkout my-main-v2
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install  # or yarn install
+   ```
+4. **Set up Firebase:**
+   - Create a Firebase project.
+   - Enable authentication (Google sign-in, email/password, etc.).
+   - Set up Firestore for data storage.
+   - Create a `.env` file and add the folllwoing Stripe API Keys: 
+    ```sh
+        REACT_APP_STRIPE_PUBLISHABLE_KEY=your_publishable_key_here
+        REACT_STRIPE_KEY=your_secret_key_here
+    ```
 
-Remember to replace the config variable in your firebase.utils.js with your own config object from the firebase dashboard! Navigate to the project settings gear icon > project settings and scroll down to the config code. Copy the object in the code and replace the variable in your cloned code.
+5. **Run the application:**
+   ```sh
+   npm start  # or yarn start
+   ```
 
-<img width="1261" alt="Screen Shot 2022-03-11 at 8 51 22 PM" src="https://user-images.githubusercontent.com/10578605/157999158-10e921cc-9ee5-46f6-a0c5-1ae5686f54f3.png">
+6. **Open in Browser:**
+   Navigate to `http://localhost:3000`.
 
-# Branching strategy
+## Learning Goals
+- Improve understanding of **Redux Toolkit** and best practices.
+- Gain hands-on experience with **Firebase authentication & Firestore**.
+- Learn about **asynchronous state management** with thunks.
+- Enhance skills in **React performance optimization**.
+- Integrate **Stripe payments** into a React application.
 
-After forking this repository and cloning it down, you will have access to all the lesson branches with code at different checkpoints throughout the course. If for some reason you need to work from the codebase at one of these lesson branch checkpoints, follow these steps:
+## Technologies Used
+- React
+- Redux Toolkit
+- Firebase (Authentication, Firestore)
+- Stripe API
+- Styled Components
+- Redux Persist
 
-1. Checkout to the lesson-# (let's use lesson-15 as an example) branch
+## Acknowledgments
+This project is based on [ZhangMYihua's original repository](https://github.com/ZhangMYihua/crwn-clothing-v2-redux-toolkit). Thanks to the instructor for providing in-depth knowledge and guidance through the course.
 
-```
-git checkout lesson-15
-```
+## License
+This project is for educational purposes and follows the original repository's license.
 
-2. Branch off from lesson-15. This will create a new branch where the code of lesson-15 is the basis for your new branch. You can name your new branch whatever you want! Let's say we use my-main-branch as the name.
 
-```
-git checkout -b my-main-branch
-```
-
-3. Now you can just code on this branch, push code from this branch up to your forked repo etc. The main thing to remember is that you want to be on this branch for your own code, so remember what you named this branch!
