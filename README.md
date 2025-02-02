@@ -4,7 +4,7 @@
 
 This project is a modern **e-commerce website** built with **React**, using **Redux Toolkit** for state management and **Stripe** for payment processing. It is a fork of [ZhangMYihua's repository](https://github.com/ZhangMYihua/crwn-clothing-v2-redux-toolkit), which I am following as part of a course to deepen my knowledge of React and best development practices.
 
-My branch for this project is **my-main**.
+My branch for this project is **my-main-v2**.
 
 ## Features
 
